@@ -23,7 +23,7 @@ function startGame() {
     tileArray = tileImages.concat(tileImages);
     shuffleArray(tileArray);
     buildBoard();
-    message.innerHTML = "Click any tile";
+    message.innerHTML = "Click any tile & Match It";
   }
 }
 
@@ -47,7 +47,7 @@ function pickCard(tileIndex, t) {
       cardFlip(t, tileIndex);
       playLockout = true;
       if (checkSrc(tileFlippedOver[tileFlippedOver.length - 1]) == checkSrc(tileFlippedOver[tileFlippedOver.length - 2])) {
-        message.innerHTML = "Match Found.  Click more tiles";
+        message.innerHTML = "Match Found😍.Click more tiles✌";
         playLockout = false;
         cardFlipped = -1;
         if (tileFlippedOver.length == tileArray.length) {
@@ -74,7 +74,7 @@ function hideCard() {
   clearInterval(timer);
   playLockout = false;
   cardFlipped = -1;
-  message.innerHTML = "Click any tile";
+  message.innerHTML = "Click any tile & Match It";
 }
 
 function gameover() {
